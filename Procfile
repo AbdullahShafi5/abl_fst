@@ -1,1 +1,1 @@
-web: guincorn myfol:wsgi
+web: gunicorn myfol:wsgi
