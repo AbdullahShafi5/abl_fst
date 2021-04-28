@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static '/css/main.css' %}" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">AbdullaSafi</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+               
+               
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-info" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card card-body h-100 border-info" id="profile-wrapper">
+            <img
+              id="profile-pic"
+              style="
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: auto;
+              "
+              src="{% static 'img/fst.png' %}"
+              alt=""
+            />
+            <hr />
+            <h4>Hi I'm Abdullah</h4>
+            <p>I Love to coding ,playing guitar and Help Others to learn</p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card card-body h-100 border-info">
+            <h4>Getting My First Client As a Web Developer</h4>
+            <hr />
+            <p>
+              After developing my first Hello world Programme , I started to
+              making websites for practise purpose. I had convinced my brother
+              to let me stab at building a better version of his outdated
+              ecommerce management system
+            </p>
+            <p>
+              I wasn't perfect. Even I didn't know javascript when started my
+              first Client Project(a web application). I started to make web application then tried
+              to become perfect.
+            </p>
+
+            <p>
+              From this you'll see that I'm Someone that jumps before I can talk
+              myself out of doing Something scary
+            </p>
+            
+              <ul class="social-links mx-auto" style="padding: 0; list-style-type:none; " >
+                <li><img style="max-width: 25px;" class="socila" src="{% static 'img/git.png ' %}" alt="" /></li>
+                <li><img style="max-width: 27px;" class="socila" src="{% static 'img/stc.png ' %}" alt="" /></li>
+                <li><img style="max-width: 28px;" class="socila" src="{% static 'img/in.png'  %}" alt="" /></li>
+                <li><img style="max-width: 23px;" class="socila" src="{% static 'img/red.png' %}" alt="" /></li>
+                <li><img style="max-width: 23px;" class="socila" src="{% static 'img/dsc.png' %}" alt="" /></li>
+                <style>
+                  .social-links ul,li {
+                    display: inline-block;
+                  }
+                  .social{
+                    width: 20px;
+                    height: 20px;
+                  }
+                </style>
+              </ul>
+            
+            
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-body h-100">
+            <h5>My Experience  as a Developer</h5>
+          <hr>
+          <p>Full Stack Developer</p>
+          <p>Designed,built and managed many website like ecommerce, blogging And many more </p>
+          </div>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="card card-body h-100">
+            <h5>My skill set </h5>
+            <hr>
+            <p></p>
+            <p>My Favourit Programming language is python .I also Know Django ,HTML/CSS, JavaScript, React.js ,REST APIS and a whole bunch more I can't possibly mention in one sentence!</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-body h-100">
+            <h5>How I learn</h5>
+            <hr>
+            <p>Build Ugly Frontend with BullShit Backend First</p>
+            <p>I can learn just about anything by having a final product to tear apart piece by piece.I break the code Where I need to figure out why things work the they do.Reading Books ,blogs ,roaming on stackoverflow with problems also helped</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-body h-100">
+            <h5>My Short Term Goals</h5>
+            <hr>
+            <p>After Almost two years of supporting my system at that ecommerce platform I'm Ready to learn something now.I'll collaborating and share my experience with others on my blog(error :404 Blog not found) & connections </p>
+            <p>Aside from building small project I would love to enter a position where I can be a part of a bigger team & learn from others with more experience than myself. </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="col-md-12">
+        <div class="card card-body h-100">
+          <h5 style="text-align: center;">Story That Would Inspire you </h5>
+          <hr>
+          
+          <p style="padding:10px;">
+            <h3 style="text-align:center;">Story Of a self taught Developer</h3>
+            <br>
+            `` I had just graduated with possibly one of the least useful degrees out there - 'Surf Science & Technology' - I shit you not, this exists and my 17 year old self thought something along the lines of 'I like to surf, that course sounds pretty rad, dude!'.
+            
+            It wasn't that 'rad' and to make any use of it you'd have to treat it as a ticket to being accepted to study a more practical MSc. in the field of oceanography.
+            
+            So I chose to follow this route and moved home to spend some time working to save up for the tuition fees and living expenses.
+            
+            That was a pretty slow process.<br> I started working in a couple of bars but eventually got a job working in a factory, putting bits of metal on other bits of metal - not fun but the money was a little better than working in bars.
+            
+            I wanted to speed this up, even if I could do something outside of work to make another ~£1000 that would shave some of the time off and I could start the course next year, instead of having to wait until the one after.
+            
+            I'd been playing around with illustrator during the last year or so looked at how I could start a small DIY surf clothing brand and it looked like I could buy some screen printing gear and just keep a 1-in-1-out sort of inventory of my designs - nice and cheap and something that would keep my brain from melting with the boredom of working in a factory.
+            
+            The designing and printing was easy but I wanted a pretty customised website to sell through and in keeping with my thrifty business plan I didn't want to hire somebody else to design & build the site. I also didn't want to pay monthly/annual listing fees that a lot of the ecommerce services charge - especially since I had no idea if anybody would actually buy this stuff.
+            
+            I'm sure you've guessed it by now, but that's when I started looking at learning to code. <br>
+            I did some very general searches on youtube and google, such as 'How to build a website' etc. And found a ton of how-to's and resources and from that day I started pouring every minute of my free time in to watching videos, ready books and experimenting on my own, mostly with a mix of PHP and JS. I'd spend 8 hours at work, reading on my lunch breaks and while answering natures calls. I'd then get home and spend between 6 and 8 hours studying before going to sleep.
+            
+            I was f**cking enjoying. A lot.
+            My brain was suddenly engaged 10x more than it ever was learning about nearshore currents or when's the best moment to shout 'cowabunga'.
+            
+            There was a moment when I'd been hanging out with a friend of mine and she asked how my saving was going for my MSc. I turned to her and said 'I think I'm going to the MSc on pause for a year and see how this coding thing goes' - I'll never forget that moment because as I said it I had this incredible smile on my face and suddenly felt incredibly positive about everything. I knew right at that second that I was never going to do that MSc.
+            
+            A month or so later I had booked a place at Bitmaker Labs in Toronto (I'm from the UK) and went to the bank for a loan to make up the extra money needed on top of what I'd managed to save.
+            
+            The rest is history, I continued studying my ass off and still do today, some 3 years since I wrote my first few loops in PHP - I never did the MSc, never sold a teeshirt and never regretted allowing a side project take over my life! :) ``
+             </p><br>
+            <div class="float-end"  ></small>__From Reddit</small></div>
+            
+        </div>
+      </div><br>
+      <div class=" col-md-9 mx-auto" >
+        <div class="card card-body border-info  " style="background-color: rgb(238, 238, 238);">
+          
+          <hr>
+          <h5 style="text-align: center;font-size:29px;">``Stay Hungry`` <br> ``Stay Foolish``</h5>
+          <small style="text-align: center;" >-<strong>Steve Jobs</strong> </small>
+          <hr>
+        </div>
+      </div><br>
+    </div>
+    <div class="text-center p-4 " style="background-color: #212529;color:rgb(255, 255, 255) ; ">
+      © No Copyright |
+      <a style="color:rgb(255, 255, 255)" >BullShit Developer AbdullaSafi</a>
+    </div>
+  </body>
+</html>
